@@ -1,0 +1,193 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --font-sans: "Roboto", sans-serif;
+}
+
+body {
+  color: #000;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin-inline: auto;
+}
+
+.text-stroka {
+  color: #fff;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+.txt-gradient {
+  background: linear-gradient(90deg, #ffc700 0%, #970 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#hero {
+  background-image: url("../imgs/hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.swiper.swiper-comments .swiper-slide {
+  height: auto;
+}
+
+.swiper.swiper-service,
+.swiper.swiper-comments {
+  overflow: visible;
+  max-width: 1170px;
+}
+
+.swiper.swiper-projects {
+  overflow: visible;
+  max-width: 1170px;
+}
+.swiper.swiper-projects .swiper-slide {
+  transition: ease-out 0.3s;
+}
+.swiper.swiper-projects .swiper-slide.swiper-slide-next img {
+  height: 459px;
+}
+@media (max-width: 900px) {
+  .swiper.swiper-projects .swiper-slide.swiper-slide-next img {
+    height: auto;
+  }
+}
+.swiper.swiper-projects .swiper-scrollbar {
+  bottom: -50px;
+  background-color: #fff;
+  border-radius: 0;
+  height: 15px;
+  padding: 2px;
+}
+.swiper.swiper-projects .swiper-scrollbar .swiper-scrollbar-drag {
+  border-radius: 0;
+  background-color: #cccccc;
+}
+@media (max-width: 901px) {
+  .swiper.swiper-projects .swiper-scrollbar {
+    bottom: -25px;
+  }
+}
+
+.swiper .next,
+.swiper .prev {
+  bottom: 50%;
+  transform: translateY(50%);
+  border: 5px solid transparent;
+  transition: ease-out border-color 0.3s, ease-out background-color 0.3s;
+}
+.swiper .next.swiper-button-disabled,
+.swiper .prev.swiper-button-disabled {
+  opacity: 0.5;
+}
+.swiper .next img,
+.swiper .prev img {
+  transition: ease-out filter 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.swiper .next:hover,
+.swiper .prev:hover {
+  border-color: #fff;
+}
+.swiper .next:active,
+.swiper .prev:active {
+  background-color: #fff;
+  border-color: #000;
+}
+.swiper .next:active img,
+.swiper .prev:active img {
+  filter: invert(1);
+}
+
+#services {
+  background-image: url("../imgs/services/service-bg.png"), url("../imgs/services/service-bg2.png");
+  background-repeat: no-repeat no-repeat;
+  background-size: contain contain;
+  background-position: right top, left 80%;
+}
+
+#choose {
+  background-image: url("../imgs/choose.png");
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: right center;
+}
+
+#steps {
+  background-image: url("../imgs/steeps/steps.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #000000;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+input[type=checkbox]:checked {
+  background-image: url("../svg/check.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.swiper-service .swiper-slide {
+  height: auto;
+}
+.swiper-service:last-child {
+  padding-bottom: 20px;
+}
+
+.projects-mob div:nth-child(4) {
+  position: relative;
+}
+.projects-mob div:nth-child(4)::after {
+  content: "Смотреть\aбольше";
+  white-space: pre-line;
+  position: absolute;
+  inset: 5px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-content: center;
+  text-align: center;
+  margin-inline: auto;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+@media (max-width: 1322px) {
+  .media-menu {
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+  .media-menu.open {
+    transform: translateX(0);
+  }
+}
+@media (max-width: 1240px) {
+  .container {
+    padding-inline: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

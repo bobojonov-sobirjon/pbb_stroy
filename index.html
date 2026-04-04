@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/png" href="imgs/logo.png" />
+	<title>PBB Строй</title>
+	<!-- Libs -->
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="css/aos.css" />
+	<link rel="stylesheet" href="css/fancybox.css">
+	<script src="js/tailwind.js"></script>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-[#F5F5F5]">
+	<!-- header start -->
+	<header class="py-[20px] bg-white sticky top-0 z-50">
+		<div class="w-full max-w-[1270px] mx-auto max-[1322px]:max-w-[1170px] max-[1201px]:px-[10px]">
+			<div class="flex items-center justify-between gap-x-[40px]">
+				<a href="index.html" class="block"><img src="imgs/logo.png" alt="logo.png" fetchpriority="high" loading="eager"
+						width="200" class="block max-[1322px]:w-[100px]" /></a>
+				<div class="flex items-start justify-between w-full max-[1322px]:hidden">
+					<ul class="flex items-center gap-x-[30px]">
+						<li>
+							<a href="#founder" class="text-lg hover:font-bold ease-in-out">О
+								нас</a>
+						</li>
+						<li>
+							<a href="#services" class="text-lg hover:font-bold ease-in-out">Услуги</a>
+						</li>
+						<li>
+							<a href="#projects" class="text-lg hover:font-bold ease-in-out">Проекты</a>
+						</li>
+						<li>
+							<a href="#comments" class="text-lg hover:font-bold ease-in-out">Отзывы</a>
+						</li>
+					</ul>
+					<div class="flex items-start gap-x-[12px]">
+						<img class="block" src="svg/location.svg" alt="location.svg" fetchpriority="high" loading="eager" width="20"
+							height="24" />
+						<div>
+							<span class="text-lg font-light leading-[normal]">Наш
+								адрес:</span>
+							<strong class="text-xl font-semibold leading-[normal] block mt-[5px]">Гулькевичи</strong>
+						</div>
+					</div>
+					<a href="mailto:VR-DESIGNER@YA.RU" class="flex items-center gap-x-[12px] text-lg font-normal">
+						<img src="svg/mail.svg" alt="mail.svg" fetchpriority="high" loading="eager" width="20" height="20" />
+						VR-DESIGNER@YA.RU
+					</a>
+					<a href="tel:+79182759972" class="flex items-center gap-x-[12px] text-lg font-semibold">
+						<img src="svg/phone.svg" alt="phone.svg" fetchpriority="high" loading="eager" width="20" height="20" />
+						+7(918)2759972
+					</a>
+					<div class="flex items-center gap-x-[12px]">
+						<a href="https://vk.com/id1073397730" target="_blank" class="block shrink-[0]"><img src="svg/wk.png"
+								alt="wk.png" fetchpriority="high" loading="eager" width="30" height="30" /></a>
+						<a href="https://max.ru/join/_vhDwZOyDjQVRuOgv2w0TaVoBaxEKtYLg_3U-g8vygI" target="_blank"
+							class="block shrink-[0]"><img src="svg/max.png" alt="max.png" fetchpriority="high" loading="eager"
+								width="30" height="30" /></a>
+					</div>
+				</div>
+				<div class="flex items-center gap-x-[30px] min-[1322px]:hidden">
+					<a href="tel:79182759972"
+						class="flex items-center gap-x-[5px] text-xl font-semibold leading-normal max-[391px]:text-lg max-[351px]:text-base max-[330px]:text-xs">
+						<img src="svg/phone.svg" alt="phone.svg" fetchpriority="low" loading="lazy" width="20" height="20"
+							class="max-[351px]:w-[18px] max-[351px]:h-[18px]">
+						+7(918)2759972
+					</a>
+					<button type="button" id="bars" class="shrink-[0]">
+						<img src="svg/bars.svg" alt="bars.svg" fetchpriority="high" loading="eager" width="25px" class="block">
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div
+		class="media-menu hidden max-[1322px]:block  w-full h-full fixed top-0 left-0 bg-white py-[15px] px-3 z-50 space-y-[15px]">
+		<button class="close absolute top-[3px] right-[5px]">
+			<img src="svg/close.svg" alt="">
+		</button>
+		<ul class="space-y-[10px]">
+			<li class="close">
+				<a class="text-[#000000] text-xl" href="#founder">О нас</a>
+			</li>
+			<li class="close">
+				<a class="text-[#000000] text-xl" href="#services">Услуги</a>
+			</li>
+			<li class="close">
+				<a class="text-[#000000] text-xl" href="#projects">Проекты</a>
+			</li>
+			<li class="close">
+				<a class="text-[#000000] text-xl" href="#comments">Отзывы</a>
+			</li>
+		</ul>
+		<a href="mailto:VR-DESIGNER@YA.RU" class="flex items-center gap-x-[12px] text-lg font-normal">
+			<img src="svg/mail.svg" alt="mail.svg" fetchpriority="high" loading="eager" width="20" height="20">
+			VR-DESIGNER@YA.RU
+		</a>
+		<div class="flex items-start gap-x-[12px]">
+			<img class="block mt-1" src="svg/location.svg" alt="location.svg" fetchpriority="high" loading="eager" width="20"
+				height="24">
+			<div>
+				<span class="text-lg font-light leading-[normal]">Наш
+					адрес:</span>
+				<strong class="text-lg font-semibold leading-[normal] block mt-[5px]">Гулькевичи</strong>
+			</div>
+		</div>
+	</div>
+	<!-- header end -->
+	<!-- hero start -->
+	<section class="relative" id="hero">
+		<div class="container">
+			<div class="sm:py-[80px_163px] py-[39px_41px] sm:space-y-[40px] space-y-5 sm:px-0 px-[9px]" data-aos="fade-right">
+				<h1
+					class="text-stroka text-[90px] max-[769px]:text-[70px] max-[561px]:text-[50px] max-[401px]:text-[40px] leading-[100%] text-white uppercase">
+					Дома <br />
+					<span class="flex items-center gap-x-[22px] my-[5px]">
+						<hr class="block text-transparent bg-[#F37825] w-[105.5px] max-[561px]:w-[50px] h-[5px]" />
+						и ремонт
+					</span>
+					<span class="text-shadow-none text-[#FFC700]">под ключ</span>
+				</h1>
+				<div
+					class="rounded-[15px] border-[0.5px] border-[#FFF5B1] bg-[rgba(255,255,255,0.25)] shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] max-w-[750px] p-[11px_24px] max-[401px]:px-[12px]">
+					<h2
+						class="text-[30px] max-[769px]:text-[20px] max-[401px]:text-[16px] font-semibold text-white leading-[normal]">
+						От проектирования до готового интерьера - ваш комфорт и уют
+						гарантированы!
+					</h2>
+				</div>
+				<button
+					class="btn inline-block cursor-pointer content-center text-center text-white font-semibold rounded-[15px] bg-[linear-gradient(93deg,#FF7E26_4.63%,#653A1D_119.04%)] uppercase p-[23px] leading-[100%] w-full max-w-[345px] transition duration-300 ease-out hover:bg-[linear-gradient(107deg,#FF7E26_12.65%,#FFF_86.73%,#D05B0C_135.91%)] active:bg-[linear-gradient(92deg,#FF7E26_4.75%,#653A1D_441.38%)] max-[451px]:p-[13px_40px] max-[451px]:w-fit"
+					onclick="svyazDialog.showModal()">сВЯЗАТЬСЯ
+					С НАМИ</button>
+			</div>
+		</div>
+	</section>
+	<!-- hero end -->
+
+	<!-- founder start -->
+	<section id="founder" class="overflow-hidden pb-2 relative">
+		<img class="sm:hidden block absolute top-[133px] right-0" src="imgs/planhouse.png" alt="">
+		<div class="container mt-[-220px] max-[1146px]:mt-[-150px] max-[676px]:mt-0 relative max-[521px]:pt-[50px]">
+			<div
+				class="flex items-stretch mb-[-50px] relative z-10 max-[801px]:mb-[30px] max-[651px]:mb-[50px] max-[586px]:flex-col-reverse max-[586px]:mt-[100px]">
+				<img src="imgs/founder.png" alt="founder.png" fetchpriority="low" loading="lazy"
+					class="ml-[-620px] max-[1201px]:ml-[-550px] mb-[-240px] max-[1071px]:max-w-[800px] max-[901px]:ml-[-410px] max-[1071px]:mb-[-150px] max-[1071px]:ml-[-430px] max-[901px]:mb-[-150px] max-[801px]:ml-[-430px] max-[801px]:mb-[-228px] max-[722px]:max-w-[650px] max-[722px]:ml-[-350px] max-[722px]:mb-[-190px] block max-[651px]:ml-[-355px] max-[651px]:mb-[-210px] max-[521px]:ml-[-200px]
+					 max-[521px]:w-full max-[521px]:mb-[-174px] max-[502px]:mb-[-170px] max-[501px]:min-w-[480px] max-[501px]:relative max-[501px]:left-1/2 max-[501px]:-translate-x-1/2 max-[370px]:ml-[-150px]" />
+				<div
+					class="ml-[50px] max-[1201px]:ml-[0] content-end max-[801px]:mb-[70px] mb-[130px] max-[761px]:mb-[15px] max-[586px]:mb-[-185px] max-[521px]:mb-[-80px] max-[521px]:ml-0"
+					data-aos="fade-up">
+					<img class="w-[250px] max-[851px]:w-[150px] max-[1071px]:max-w-[180px]" src="imgs/logo.png" alt="logo.png"
+						fetchpriority="low" loading="lazy" width="250" />
+					<b
+						class="block my-[30px_20px] max-[1071px]:text-[24px] max-[722px]:my-[20px_10px] max-[722px]:text-[18px] max-[676px]:my-[20px_10px] text-[30px] font-medium max-[400px]:text-[20px]">Основатель
+						команды</b>
+					<h1
+						class="bg-[linear-gradient(92deg,#000_-180.29%,#FFC700_119.53%)] bg-clip-text text-transparent text-shadow-[0_8px_5px_rgba(0,0,0,0.25)] text-[80px] font-extrabold max-[1071px]:text-[50px] max-[722px]:text-[40px] max-[676px]:text-[40px]">
+						Рыбальченко Владимир
+					</h1>
+				</div>
+			</div>
+			<div data-aos="fade-down"
+				class="relative rounded-[15px] z-20 border-[0.5px] border-[#FFF5B1] shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] p-[30px_50px] p-[13px_16px] max-[901px]:p-[30px_30px] bg-white max-[501px]:p-[13px_16px]">
+				<p class="text-[30px] max-[901px]:text-[20px] max-[501px]:text-base font-extralight">
+					Более 20 лет я профессионально занимаюсь ремонтом и строительством
+					в
+					Краснодарском крае. За это время мне удалось создать слаженную,
+					профессиональную команду, с которой мы реализуем проекты любой
+					сложности.
+					<br>
+					<br>
+					<b>Опыт:</b> За плечами большое количество успешно выполненых
+					проектов,
+					разного уровня сложности.
+				</p>
+			</div>
+		</div>
+	</section>
+	<!-- founder end -->
+
+	<!-- services start -->
+	<section id="services" class="md:pt-[100px] pt-[50px]">
+		<div class="container">
+			<div class="mb-[50px]">
+				<h1
+					class="text-center mb-[10px] txt-gradient text-[80px] max-[769px]:text-[50px] max-[551px]:text-[40px] max-[401px]:text-[30px] font-extrabold"
+					data-aos="fade-up">Услуги
+				</h1>
+				<p class="text-[30px] max-[769px]:text-[20px] font-light" data-aos="fade-up">
+					Идеальный
+					ремонт без
+					головной боли:
+					Мы берем на себя все - от
+					проекта до финальной уборки. Вам останется только принять ключи и
+					наслаждаться результатом.</p>
+			</div>
+		</div>
+		<div class="cards-wrapper">
+			<div class="cards-container">
+				<div class="space-y-[30px] services-content overflow-hidden max-[1201px]:px-[10px]" id="category">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- services end -->
+
+	<!-- projects start -->
+	<section id="projects" class="md:pt-[100px] pt-[50px] overflow-hidden flex flex-col">
+		<div class="lg:block md:-order-1 order-1">
+			<div class="container">
+				<h1
+					class="txt-gradient text-[80px] max-[769px]:text-[50px] max-[551px]:text-[40px] max-[401px]:text-[30px] max-[769px]:leading-[1.1] text-center font-extrabold leading-[normal]"
+					data-aos="fade-up">Наши проекты</h1>
+			</div>
+			<div class="max-[1201px]:px-[10px] max-[451px]:hidden">
+				<div
+					class="swiper swiper-projects max-[601px]:mb-0 max-[768px]:mb-[30px] max-[401px]:mt-[30px] my-[50px_100px] "
+					data-aos="fade-up">
+					<div class="swiper-wrapper items-center">
+					</div>
+					<div
+						class="prev cursor-pointer absolute left-[-100px] max-[1441px]:left-[-50px] max-[1322px]:left-0 bg-[#000000] rounded-full w-[70px] max-[901px]:w-[50px] h-[70px] max-[901px]:h-[50px] content-center z-2">
+						<img src="svg/arrow-left.svg" alt="arrow-left" fetchpriority="low" loading="lazy" width="20" height="20"
+							class="block mx-auto">
+					</div>
+					<div
+						class="next cursor-pointer absolute right-[-100px] max-[1441px]:right-[-50px] max-[1322px]:right-0 bg-[#000000] rounded-full w-[70px] h-[70px] max-[901px]:w-[50px] max-[901px]:h-[50px] content-center z-2">
+						<img src="svg/arrow-right.svg" alt="arrow-right" fetchpriority="low" loading="lazy" width="20" height="20"
+							class="block mx-auto max-[901px]:w-[15px] max-[901px]:h-[15px]">
+					</div>
+					<div class="prev"></div>
+					<div class="swiper-scrollbar max-[601px]:hidden"></div>
+				</div>
+			</div>
+			<!-- mobile projects -->
+			<div class="px-[10px] grid grid-cols-2 gap-[20px] mt-[30px] pb-2 projects-mob"></div>
+		</div>
+		<div id="subscribe"
+			class="md:order-1 -order-1 bg-[url(svg/subs-bg.svg)] bg-no-repeat bg-cover md:py-[53px] py-[30px] bg-center lg:mb-0 mb-[50px]">
+			<div class="container">
+				<div class="flex items-statch justify-between gap-x-[25px] max-[1024px]:flex-col max-[1024px]:gap-y-[30px]">
+					<div
+						class="flex items-start gap-x-[40px] w-full max-w-[562px] max-[1024px]:max-w-full max-[561px]:gap-x-[10px]"
+						data-aos="fade-right">
+						<div class="flex-1 flex flex-col gap-y-[20px] items-center">
+							<div
+								class="overflow-hidden rounded-full w-full max-w-[160px] aspect-square h-full bg-[linear-gradient(to_right,#A200D3_0%,#0025CA_100%)] p-[10px] max-[401px]:p-[5px] shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]">
+								<img src="imgs/services/service (1).png" alt="subscribe.png" fetchpriority="low" loading="lazy"
+									class="object-cover rounded-full block mx-auto object-center w-full h-full">
+							</div>
+							<strong
+								class="text-xl font-medium text-center leading-[normal] block max-[501px]:text-base max-[401px]:text-sm">Меняем
+								свет без демонтажа</strong>
+						</div>
+						<div class="flex-1 flex flex-col gap-y-[20px] items-center">
+							<div
+								class="w-full max-w-[160px] aspect-square overflow-hidden rounded-full h-full bg-[linear-gradient(to_right,#A200D3_0%,#0025CA_100%)] p-[10px] max-[401px]:p-[5px] shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]">
+								<img src="imgs/services/service (1).png" alt="subscribe.png" fetchpriority="low" loading="lazy"
+									class="object-cover rounded-full block mx-auto object-center w-full h-full">
+							</div>
+							<strong
+								class="text-xl  font-medium text-center leading-[normal] block max-[501px]:text-base max-[401px]:text-sm">Ванна
+								ремонт дизайн</strong>
+						</div>
+						<a href="https://t.me/RBBstroi" target="_blank" class="flex-1 flex flex-col gap-y-[20px] items-center">
+							<div
+								class="w-full max-w-[160px] aspect-square overflow-hidden rounded-full h-full  content-center border-10 max-[401px]:border-5 border-[#274CEE] bg-[#0017E6] p-[10px] shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]">
+								<img src="svg/tg.svg" alt="tg.svg" fetchpriority="low" loading="lazy" width="66.719" height="55.955"
+									class="object-cover block mx-auto object-center lg:w-[66px] w-[50px]">
+							</div>
+							<strong
+								class="text-xl font-medium text-center leading-[normal] block max-[501px]:text-base max-[401px]:text-sm">Наш
+								телеграмм канал</strong>
+						</a>
+					</div>
+					<div class="w-full max-w-[441px] max-[1024px]:max-w-full" data-aos="fade-left">
+						<h1 class="text-[25px] font-medium text-center max-[501px]:text-xl max-[401px]:text-sm">Больше
+							интересных
+							постов каждый день в нашем телеграм-канале,
+							подпишись сейчас!</h1>
+						<a href="https://t.me/RBBstroi" target="_blank"
+							class="w-full mx-auto bg-[#2C68FF] flex items-center justify-center h-[70px] text-[25px] font-medium text-white gap-x-[30px] mt-[20px] rounded-[20px] max-[501px]:text-base max-[501px]:h-[41px] max-[501px]:gap-x-[15px] max-[1024px]:w-fit max-[1024px]:px-[54px] max-[1024px]:rounded-full max-[1024px]:bg-[#2C68FF]">
+							<img class="w-[25px] max-[501px]:w-[18px]" src="svg/tg.svg" alt="tg.svg" fetchpriority="low"
+								loading="lazy" width="25" height="25">
+							Подписаться
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- projects end -->
+
+	<!-- choose start -->
+	<section id="choose" class="pt-[100px]">
+		<div class="w-full max-w-[964px] mx-auto lg:px-0 px-[10px]">
+			<h1
+				class="txt-gradient text-[80px] font-extrabold text-center leading-[1.1] max-[769px]:text-[50px] max-[551px]:text-[40px] max-[401px]:text-[30px]"
+				data-aos="fade-up">Почему
+				для выполнения непростых задач по строительству и ремонту выбирают
+				"РВВ Строй” ?</h1>
+			<div id="choose-grid"
+				class="mt-[30px] grid md:grid-cols-2 grid-cols-1 lg:gap-[33px] gap-[20px] md:gap-[15px] items-stretch">
+			</div>
+		</div>
+	</section>
+	<!-- choose end -->
+
+	<!-- comments start -->
+	<section id="comments" class="pt-[100px] pb-2 overflow-hidden">
+		<div class="container">
+			<h1
+				class="txt-gradient text-center text-[60px] max-[769px]:text-[50px] max-[551px]:text-[40px] max-[401px]:text-[30px] max-[769px]:leading-[1.1] font-extrabold leading-[normal]"
+				data-aos="fade-up">Вот
+				что пишут о нас клиенты
+				после работы с нами</h1>
+		</div>
+
+		<div class="max-[1201px]:px-2">
+			<div class="swiper swiper-comments mt-[30px]" data-aos="fade-up">
+				<div class="swiper-wrapper items-stretch"></div>
+				<div
+					class="prev max-[501px]:hidden cursor-pointer absolute media-arrow  left-[-100px] max-[1441px]:left-[-50px] max-[1322px]:left-0 bg-[#000000] rounded-full w-[70px] h-[70px] max-[901px]:w-[50px] max-[901px]:h-[50px] content-center z-2">
+					<img src="svg/arrow-left.svg" alt="arrow-left" fetchpriority="low" loading="lazy" width="20" height="20"
+						class="block mx-auto">
+				</div>
+				<div
+					class="next max-[501px]:hidden cursor-pointer absolute right-[-100px] max-[1441px]:right-[-50px] media-arrow max-[1322px]:right-0 bg-[#000000] rounded-full w-[70px] h-[70px] max-[901px]:w-[50px] max-[901px]:h-[50px] content-center z-2">
+					<img src="svg/arrow-right.svg" alt="arrow-right" fetchpriority="low" loading="lazy" width="20" height="20"
+						class="block mx-auto">
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!-- comments end -->
+
+	<!-- steps start -->
+	<section id="steps" class="lg:pt-[100px] pt-[50px]">
+		<div class="container">
+			<h1
+				class="txt-gradient  text-[50px] max-[769px]:text-[50px] max-[551px]:text-[40px] max-[401px]:text-[30px] max-[769px]:leading-[1.1] font-extrabold text-center leading-[normal]"
+				data-aos="fade-up">Для
+				старта всего <br class="sm:hidden block"> 5 шагов</h1>
+			<div
+				class="grid items-stretch grid-cols-3 mt-[30px] gap-[30px] max-[1024px]:gap-[20px] max-[1024px]:grid-cols-2 max-[601px]:gap-[10px]"
+				id="step-cards">
+				<div class="relative h-auto rounded-[15px] bg-white sm:p-[10px] p-[5px] overflow-hidden" data-aos="fade-up">
+					<img src="imgs/steeps/steep6.svg" alt="steep.png" fetchpriority="low" loading="lazy"
+						referrerpolicy="origin-when-cross-origin"
+						class="w-full h-full block object-cover object-center rounded-[10px]">
+					<div
+						class="absolute inset-[30px] max-[551px]:inset-[15px] max-[401px]:inset-[10px] flex flex-col justify-center">
+						<h1
+							class="text-[40px] max-[461px]:mb-[5px] max-[421px]:text-sm max-[769px]:text-[30px] max-[769px]:leading-[1.1] mb-[10px] text-[#FFEBA2] font-medium leading-[normal] max-[581px]:text-xl max-[401px]:text-[10px]">
+							Свяжитесь
+							с нами в MAX</h1>
+						<p
+							class="text-white text-lg font-normal leading-[normal] max-[581px]:text-sm max-[421px]:text-xs max-[401px]:text-[10px]">
+							Рассчитаем
+							стоимость ремонта с учетом опыта работы на похожем
+							объекте. Консультация и предварительный расчет сразу по
+							телефону</p>
+						<a href="https://max.ru/join/_vhDwZOyDjQVRuOgv2w0TaVoBaxEKtYLg_3U-g8vygI" target="_blank"
+							class="inline-block cursor-pointer text-[20px] max-[769px]:text-base max-[581px]:text-sm max-[581px]:rounded-full max-[581px]:py-[6px_7px] mt-[22px] content-center text-center text-white font-semibold rounded-[15px] bg-[linear-gradient(93deg,#FF7E26_4.63%,#653A1D_119.04%)] uppercase p-[23px] leading-[100%] w-full max-w-[276px] max-[461px]:text-xs max-[461px]:mt-[10px] hover:bg-[linear-gradient(107deg,#FF7E26_12.65%,#FFF_86.73%,#D05B0C_135.91%)] active:bg-[linear-gradient(92deg,#FF7E26_4.75%,#653A1D_441.38%)] max-[401px]:text-[8px]">сВЯЗАТЬСЯ
+							С НАМИ</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- steps end -->
+
+	<!-- blog start -->
+	<section id="blog" class="lg:pt-[100px] pt-[50px]">
+		<div class="container">
+			<h1
+				class="txt-gradient text-[50px] mb-[30px] max-[769px]:text-[50px] max-[551px]:text-[40px] max-[401px]:text-[30px] max-[769px]:leading-[1.1] font-extrabold text-center leading-[normal]"
+				data-aos="fade-up">Наш
+				видеоблог</h1>
+			<div
+				class="flex items-center justify-between gap-x-[80px] gap-x-5 max-[1021px]:gap-y-[20px] max-[1021px]:items-start max-[1021px]:flex-col"
+				data-aos="fade-up">
+				<div class="flex items-center sm:gap-x-[40px] gap-5 shrink-[0]">
+					<img src="imgs/profile.png" alt="PBB Строй" fetchpriority="low" loading="lazy"
+						referrerpolicy="origin-when-cross-origin" width="150" height="150"
+						class="block object-cover object-center rounded-full sm:w-[150px] sm:h-[150px] w-[50px] h-[50px]">
+					<strong class="sm:text-[30px] text-[15px] font-medium leading-[normal]">PBB
+						Строй</strong>
+				</div>
+				<div class="flex items-stretch md:gap-x-[20px] gap-x-[11px] w-full">
+					<a href="https://t.me/RBBstroi" target="_blank"
+						class="flex-1 flex items-center  justify-center md:gap-x-[30px] gap-x-[7px] bg-[#2C68FF] rounded-[20px] md:px-[25px] px-[10px] sm:h-[70px] h-[35px] sm:text-[25px] text-[12px] font-medium leading-[normal] text-white">
+						<img src="svg/tg.svg" alt="telegram.svg" fetchpriority="low" loading="lazy" width="25" height="25"
+							class="block sm:w-[25px] w-[14px]">
+						Telegram
+					</a>
+					<a href="https://rutube.ru/profile/info/" target="_blank"
+						class="flex-1 block content-center text-center bg-[#2C68FF] rounded-[20px] md:px-[25px] px-[10px] sm:h-[70px] h-[35px] sm:text-[25px] text-[12px] font-medium leading-[normal] text-white">
+						Rutube
+					</a>
+					<a href="https://vkvideo.ru/@club236311697" target="_blank"
+						class="flex-1 block content-center text-center bg-[linear-gradient(97deg,#457AFF_0%,#2A4999_97.98%)] rounded-[20px] md:px-[25px] px-[10px] sm:h-[70px] h-[35px] sm:text-[25px] text-[12px] font-medium leading-[normal] text-white">
+						VK Видео
+					</a>
+				</div>
+			</div>
+			<div
+				class="flex gap-x-[130px] max-[1201px]:gap-x-[30px] mt-[70px] max-[901px]:flex-col max-[901px]:gap-y-[30px] max-[640px]:mt-[20px]"
+				id="youtube-videos">
+
+			</div>
+		</div>
+	</section>
+	<!-- blog end -->
+
+	<!-- footer start -->
+	<footer class="pt-[20px] mt-[100px] bg-white" data-aos="fade-up">
+		<div class="container">
+			<div class="flex gap-[30px] items-start justify-between gap-x-[20px] max-[701px]:flex-wrap max-[451px]:flex-col">
+				<a class="block" href="index.html"><img src="imgs/logo.png" alt="logo" fetchpriority="low" loading="lazy"
+						referrerpolicy="origin-when-cross-origin" width="150"></a>
+				<ul class="space-y-[11px]">
+					<li><a href="#!" class="text-lg leading-[normal] font-normal">О
+							нас</a></li>
+					<li><a href="#!" class="text-lg leading-[normal] font-normal">Услуги</a></li>
+					<li><a href="#!" class="text-lg leading-[normal] font-normal">Проекты</a></li>
+					<li><a href="#!" class="text-lg leading-[normal] font-normal">Отзывы</a></li>
+				</ul>
+
+				<div class="flex items-start gap-x-[12px]">
+					<img class="block" src="svg/location.svg" alt="location.svg" fetchpriority="high" loading="eager" width="20"
+						height="24">
+					<div>
+						<span class="text-lg font-light leading-[normal]">Наш
+							адрес:</span>
+						<strong class="text-xl font-semibold leading-[normal] block mt-[5px]">Гулькевичи</strong>
+					</div>
+				</div>
+
+				<div class="space-y-[12px]">
+					<a href="tel:+79182759972" class="flex items-center gap-x-[12px] text-lg font-semibold">
+						<img src="svg/phone.svg" alt="phone.svg" fetchpriority="high" loading="eager" width="20" height="20">
+						+7(918)2759972
+					</a>
+					<a href="mailto:VR-DESIGNER@YA.RU" class="flex items-center gap-x-[12px] text-lg font-normal">
+						<img src="svg/mail.svg" alt="mail.svg" fetchpriority="high" loading="eager" width="20" height="20">
+						VR-DESIGNER@YA.RU
+					</a>
+					<div class="flex items-center gap-x-[12px]">
+						<a href="https://vk.com/id1073397730" target="_blank" class="block shrink-[0]"><img src="svg/wk.png"
+								alt="wk.png" fetchpriority="high" loading="eager" width="30" height="30"></a>
+						<a href="https://max.ru/join/_vhDwZOyDjQVRuOgv2w0TaVoBaxEKtYLg_3U-g8vygI" class="block shrink-[0]"><img
+								src="svg/max.png" alt="max.png" fetchpriority="high" loading="eager" width="30" height="30"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bg-[#000000CC] text-center text-white mt-[30px] py-5">
+			<span class="text-base">© 2026 Все права защищены.</span>
+		</div>
+	</footer>
+	<!-- footer end -->
+
+	<dialog id="svyazDialog"
+		class="rounded-[15px] fixed top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 max-[1120px]:w-[90%] max-[551px]:p-[50px] max-[501px]:p-[40px] max-[401px]:w-[calc(100%-20px)] max-[401px]:pt-[30px] max-[401px]:p-[20px] bg-white shadow-[0_10px_10px_0_rgba(0,0,0,0.35)] p-[49px_74px_53px_74px] space-y-[35px] max-[501px]:space-y-[20px]">
+		<button type="button"
+			class="absolute top-[17px] right-[30px] max-[401px]:top-[10px] max-[401px]:right-[15px] cursor-pointer"
+			onclick="svyazDialog.close()"><img src="svg/close.svg" alt="close.svg" fetchpriority="low" loading="lazy"
+				width="24" height="24" class="block"></button>
+		<div>
+			<h1 class="text-[35px] font-semibold leading-[normal] mb-[10px] max-[501px]:mb-[5px] max-[501px]:text-[25px]">
+				Заказать
+				обратный звонок</h1>
+			<p class="text-lg font-extralight leading-[normal]">Оставьте заявку, и
+				мы свяжемся с вами.</p>
+		</div>
+		<div class>
+			<input type="text" placeholder="Ваше имя"
+				class="text-base font-medium leading-[normal] max-[501px]:py-[10px] max-[501px]:text-sm placeholder:text-[#747474] p-[20px_15px] border-1 border-[#000000] outline-none rounded-[20px] block w-full">
+			<input type="text" placeholder="Телефон" id="phone_ru"
+				class="mt-[15px] text-base font-medium leading-[normal] max-[501px]:py-[10px] max-[501px]:text-sm placeholder:text-[#747474] p-[20px_15px] border-1 border-[#000000] outline-none rounded-[20px] block w-full">
+		</div>
+		<label for="dsn"
+			class="flex items-center select-none cursor-pointer gap-x-[5px] max-[501px]:text-sm text-lg leading-[normal] font-extralight">
+			<input type="checkbox" id="dsn" checked>
+			Даю согласие на обработку персональных данных.
+		</label>
+		<button type="button"
+			class="uppercase send-btn text-white text-xl font-semibold leading-normal w-full max-w-[270px] max-[501px]:h-[45px] max-[501px]:max-w-full rounded-[15px] cursor-pointer shadow-[0_12px_8px_0_rgba(0,0,0,0.25)] bg-[linear-gradient(92deg,#FF7E26_4.75%,#653A1D_441.38%)] h-[69px] max-[501px]:text-sm">отправить</button>
+	</dialog>
+
+	<!-- scripts -->
+	<script src="js/fancybox.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/swiper.js"></script>
+	<script src="js/imask.js"></script>
+	<script type="module" src="main.js"></script>
+	<script>
+		const element = document.getElementById('phone_ru');
+		const maskOptions = {
+			mask: '+{7}(000)000-00-00'
+		};
+		const mask = IMask(element, maskOptions);
+		AOS.init();
+
+		// swipers
+		new Swiper('.swiper-projects', {
+			slidesPerView: 3,
+			spaceBetween: 20,
+			navigation: {
+				nextEl: ".next",
+				prevEl: ".prev",
+			},
+			scrollbar: {
+				el: ".swiper-scrollbar",
+			},
+			// ...
+			allowTouchMove: false,
+			simulateTouch: false,
+
+			keyboard: {
+				enabled: false,
+			},
+			mousewheel: {
+				enabled: false,
+			},
+			preventClicks: false,
+			preventClicksPropagation: false,
+			breakpoints: {
+				1140: {
+					spaceBetween: 30
+				},
+				901: {
+					allowTouchMove: true
+				},
+				451: {
+					allowTouchMove: false,
+					slidesPerView: 2,
+					spaceBetween: 20,
+				},
+				0: {
+					slidesPerView: 1
+				}
+			}
+		});
+		new Swiper('.swiper-comments', {
+			slidesPerView: 3,
+			spaceBetween: 30,
+			navigation: {
+				nextEl: ".next",
+				prevEl: ".prev",
+			},
+			breakpoints: {
+				1024: {
+					slidesPerView: 3,
+					spaceBetween: 30,
+				},
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+				},
+				0: {
+					slidesPerView: 1.4,
+					spaceBetween: 10,
+				},
+			}
+		});
+
+		Fancybox.bind("[data-fancybox]", {});
+
+
+		// send phone 
+		const dialog = document.getElementById("svyazDialog");
+		const submitBtn = dialog.querySelector(".send-btn");
+		const nameInput = dialog.querySelector("input[placeholder='Ваше имя']");
+		const phoneInput = document.getElementById("phone_ru");
+		const checkbox = document.getElementById("dsn");
+
+		submitBtn.addEventListener("click", async () => {
+			const name = nameInput.value.trim();
+			const phone = phoneInput.value.trim();
+
+			if (!name || !phone) {
+				alert("Заполните все поля");
+				return;
+			}
+
+			if (!checkbox.checked) {
+				alert("Необходимо согласие на обработку данных");
+				return;
+			}
+
+			try {
+				const response = await fetch("https://api.rvv-stroi.ru/api/callback-request/", {
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json"
+					},
+					body: JSON.stringify({
+						name: name,
+						phone: phone
+					})
+				});
+
+				if (!response.ok) throw new Error();
+
+				alert("Заявка отправлена");
+				dialog.close();
+				nameInput.value = "";
+				phoneInput.value = "";
+
+			} catch (error) {
+				alert("Ошибка при отправке");
+			}
+		});
+
+	</script>
+</body>
+
+</html>
