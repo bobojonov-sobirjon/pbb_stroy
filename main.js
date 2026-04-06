@@ -584,7 +584,7 @@ function renderYoutubeVideos(videos) {
 
 	container.innerHTML = `
     ${renderYoutubeVideoCard(featuredVideo, true)}
-    <div class="grid grid-cols-2 sm:gap-[30px] gap-[10px] max-[1201px]:flex-1">
+    <div class="grid grid-cols-2 sm:gap-[30px] gap-[10px] max-[1201px]:flex-1 w-full">
       ${sideVideos.map((video) => renderYoutubeVideoCard(video)).join('')}
     </div>
   `;
