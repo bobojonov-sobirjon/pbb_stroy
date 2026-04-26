@@ -488,47 +488,23 @@ function initServiceCategorySwipers() {
 	}
 }
 
-function getYoutubeIdFromUrl(youtubeUrl) {
-	const rawUrl = String(youtubeUrl || '').trim();
-	if (!rawUrl) return '';
-
-	try {
-		const parsedUrl = new URL(rawUrl);
-		const byQuery = parsedUrl.searchParams.get('v');
-		if (byQuery) return byQuery;
-
-		const pathParts = parsedUrl.pathname.split('/').filter(Boolean);
-		if (!pathParts.length) return '';
-
-		if (parsedUrl.hostname.includes('youtu.be')) {
-			return pathParts[0] || '';
-		}
-
-		const shortsIndex = pathParts.findIndex((part) => part === 'shorts');
-		if (shortsIndex !== -1 && pathParts[shortsIndex + 1]) {
-			return pathParts[shortsIndex + 1];
-		}
-
-		return pathParts[pathParts.length - 1] || '';
-	} catch (error) {
-		return '';
-	}
-}
-
 function getYoutubePoster(video) {
 	const thumbnail = String(video?.thumbnail || '').trim();
 	if (thumbnail) return thumbnail;
-
-	const youtubeId = getYoutubeIdFromUrl(video?.youtube_url);
-	if (!youtubeId) return 'imgs/services/service (1).png';
-
-	return `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`;
+	return 'imgs/services/service (1).png';
 }
 
 function getYoutubeEmbedUrl(youtubeUrl) {
-	const youtubeId = getYoutubeIdFromUrl(youtubeUrl);
-	if (!youtubeId) return '';
-	return `https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0&playsinline=1`;
+	const rawUrl = String(youtubeUrl || '').trim();
+	if (!rawUrl) return '';
+
+	const normalizedUrl = /^https?:\/\//i.test(rawUrl) ? rawUrl : `https://${rawUrl}`;
+
+	try {
+		return new URL(normalizedUrl).toString();
+	} catch (error) {
+		return '';
+	}
 }
 
 function renderYoutubeVideoCard(video, large = false) {
@@ -705,7 +681,7 @@ function bindYoutubeVideoEvents() {
 			wrap.innerHTML = `
         <iframe
           src="${embedUrl}"
-          title="YouTube video player"
+          title="Video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
           style="position:absolute;inset:0;width:100%;height:100%;border:0;"></iframe>
@@ -715,7 +691,7 @@ function bindYoutubeVideoEvents() {
 
 		wrap.innerHTML = `
       <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;padding:24px;text-align:center;">
-        Не удалось открыть в модальном окне. <a href="${escapeHtml(watchUrl)}" target="_blank" rel="noopener noreferrer" style="margin-left:6px;text-decoration:underline;color:#fff;">Открыть на YouTube</a>
+        Не удалось открыть в модальном окне. <a href="${escapeHtml(watchUrl)}" target="_blank" rel="noopener noreferrer" style="margin-left:6px;text-decoration:underline;color:#fff;">Открыть видео</a>
       </div>
     `;
 	});
